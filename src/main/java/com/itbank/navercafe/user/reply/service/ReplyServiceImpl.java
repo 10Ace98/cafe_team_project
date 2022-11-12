@@ -145,9 +145,9 @@ public class ReplyServiceImpl implements ReplyService{
 
 	@Override
 	public void deleteReply(int replyNum) {
-		System.out.println("삭제할 댓글 : "+replyNum);
+		//System.out.println("삭제할 댓글 : "+replyNum);
 		rm.deleteReply(replyNum);
-		System.out.println("사진 삭제할 댓글번호 : "+replyNum);
+		//System.out.println("사진 삭제할 댓글번호 : "+replyNum);
 		fs.deleteReplyNum(replyNum);
 	}
 

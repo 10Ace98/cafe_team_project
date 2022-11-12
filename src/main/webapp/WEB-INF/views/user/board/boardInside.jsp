@@ -633,7 +633,7 @@ li.bbp-topic-freshness-test{
 </article>
 <!--게시물 시작 article -->
 
-	<h1><a href="goMemoBoardList?cafeId=${boardMenuType.cafeId}">메모로</a></h1>
+	<%-- <h1><a href="goMemoBoardList?cafeId=${boardMenuType.cafeId}">메모로</a></h1> --%>
          
 		       
 			      					<!-- 새로운자유게시판1 등 기준 관련 게시판   -->

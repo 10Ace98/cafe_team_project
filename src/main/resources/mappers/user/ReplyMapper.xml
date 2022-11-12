@@ -28,7 +28,7 @@
 		select R.reply_num,R.board_num,R.reply_content,R.reply_saveDate,R.user_id,
 		R.reply_group,R.reply_step,C.cafe_id,C.cafe_user_nickname,C.cafe_user_image_num
 		from project_reply R inner join project_cafe_member C on R.user_id=C.user_id
-		where board_num=#{boardNum} and C.cafe_id=#{cafeId} order by reply_num desc
+		where board_num=#{boardNum} and C.cafe_id=#{cafeId} order by reply_num asc
 	</select>
 	
 	<!-- 댓글 작성  -->

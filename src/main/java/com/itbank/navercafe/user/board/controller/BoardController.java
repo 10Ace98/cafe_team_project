@@ -210,10 +210,10 @@ public class BoardController {
 	
 	@PostMapping("deleteReply")
 	public String deleteReply(HttpServletRequest res) {
-		System.out.println("댓글삭제시 넘어오는 :"+Integer.parseInt(res.getParameter("boardNum")));
-		System.out.println("댓글삭제시 넘어오는 :"+Integer.parseInt(res.getParameter("replyNum")));
-		System.out.println("댓글삭제시 넘어오는 :"+res.getParameter("boardMenuNum"));
-		System.out.println("댓글삭제시 넘어오는:"+res.getParameter("cafeId"));
+//		System.out.println("댓글삭제시 넘어오는 :"+Integer.parseInt(res.getParameter("boardNum")));
+//		System.out.println("댓글삭제시 넘어오는 :"+Integer.parseInt(res.getParameter("replyNum")));
+//		System.out.println("댓글삭제시 넘어오는 :"+res.getParameter("boardMenuNum"));
+//		System.out.println("댓글삭제시 넘어오는:"+res.getParameter("cafeId"));
 		replySer.deleteReply(Integer.parseInt(res.getParameter("replyNum")));
 		return "redirect:goBoardInside?boardNum="+res.getParameter("boardNum")+"&num="+1+
 		"&boardMenuNum="+res.getParameter("boardMenuNum")+"&cafeId="+res.getParameter("cafeId");
